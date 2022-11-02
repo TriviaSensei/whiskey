@@ -1,0 +1,223 @@
+:root {
+	--bgcolor: #202020;
+	--font-color: yellow;
+	--color--1: black;
+	--color-0: #ff0000;
+	--color-1: #ff9b94;
+	--color-2: #ffad61;
+	--color-3: #ffff80;
+	--color-4: #bfff59;
+	--color-5: #69ff69;
+	--dark-gray: rgb(58, 58, 60);
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: var(--bgcolor);
+	color: var(--font-color);
+	font-family: sans-serif;
+	touch-action: none;
+}
+
+.modal {
+	color: black;
+}
+
+.modal-dialog {
+	position: absolute;
+	width: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) !important;
+}
+
+.application {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 2vh;
+	box-sizing: border-box;
+}
+
+.header {
+	text-align: center;
+	font-size: 4vh;
+	font-weight: bold;
+	padding: 2vh;
+}
+
+.f-1 {
+	flex: 1;
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.whiskey-list,
+.vote-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.create-new {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-container {
+	display: flex;
+}
+
+.form-container > form {
+	display: flex;
+	width: 100%;
+}
+
+.input-container {
+	flex: 1;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.input-container > input[type='text'] {
+	height: 5vh;
+	border-radius: 5px;
+	font-size: 3vh;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.input-container > textarea {
+	font-size: 3vh;
+	width: 100%;
+	height: 15vh;
+}
+
+.input-label {
+	font-size: 2vh;
+	margin-bottom: 0.5em;
+}
+
+.application button {
+	height: 5vh;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button-container > button {
+	margin-right: 5px;
+}
+
+.application button:hover {
+	background-color: yellow;
+}
+
+.items-list {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.whiskey-item {
+	width: 70%;
+}
+
+.whiskey-item > button {
+	margin: 5px;
+	width: 100%;
+}
+
+.resultsTable,
+.modalTable {
+	width: 100%;
+}
+
+.resultsTable td,
+.resultsTable th {
+	padding: 5px;
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+
+.modalTable td,
+.modalTable th {
+	padding: 5px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.DetailHeader,
+.DetailRow {
+	width: 33%;
+}
+
+.vote-distribution {
+	width: 90%;
+	margin-bottom: 1rem;
+}
+
+.graph-container {
+	flex: 9;
+	margin: 2px;
+	width: 100%;
+	text-align: center;
+	color: black;
+	display: flex;
+}
+
+.vote {
+	width: 15px;
+	margin: 1px;
+}
+
+.vote-value {
+	margin: auto;
+}
+
+.graph {
+	color: white;
+	height: 100%;
+	width: 100%;
+}
+
+.graph-bar {
+	height: 100%;
+	background-color: var(--dark-gray);
+	justify-content: center;
+	display: flex;
+	margin: auto 0;
+}
+
+.num-votes {
+	font-size: 12px;
+	color: white;
+	justify-content: flex-end;
+	font-weight: bold;
+	padding: 2px 10px;
+}
+
+.align-right {
+	justify-content: flex-end;
+}
+
+@media (pointer: fine) and (min-width: 900px) {
+	.application {
+		flex-direction: row;
+		padding: 30px;
+	}
+}
+
+.invisible {
+	display: none;
+}
+
+/* #ShowResultsButton {
+  display:none;
+} */
