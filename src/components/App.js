@@ -204,7 +204,11 @@ class App extends React.Component {
 							</div>
 						</div>
 					</div> */}
-					<div className="whiskey-list f-1">
+					<div
+						className={`whiskey-list f-1 ${
+							this.props.VotingOpen ? 'invisible' : ''
+						}`}
+					>
 						<div className="header">Whiskeys</div>
 						<div className="create-new">
 							<div className="form-container">

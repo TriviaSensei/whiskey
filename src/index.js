@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './styles.css';
 
-const votingOpen = false;
+const votingOpen = true;
 
 ReactDOM.render(
 	<React.StrictMode>
